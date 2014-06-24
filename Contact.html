@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>La Langkirève | Contact</title>
+    <meta name="description" content="contact">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modernizr.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function initialize() {
+            var map_canvas = document.getElementById('map');
+            var map_options = {
+                center: new google.maps.LatLng(47.8705553,-2.9518584,17),
+                zoom: 9,
+                draggable: false,
+                scrollwheel: false,
+                zoomControl: false,
+                mapTypeControl: false,
+                overviewMapControl: false,
+                panControl: false,
+                rotateControl: false,
+                scaleControl: false,
+                streetViewControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(map_canvas, map_options)
+            var companyPos = new google.maps.LatLng(47.8705553,-2.9518584,17);
+            var companyMarker = new google.maps.Marker({
+              position: companyPos,
+              map: map,
+              title:"La Langkirève"
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+</head>
+<body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+            <!-- Add your site or application content here -->
+            <header>
+                <div class="page-header container">
+                    <nav>
+                        <ul class="clearfix">
+                            <li><a href="Produits.html" class="active">Produits</a></li>
+                            <li><a href="#">Infos</a></li>
+
+                            <li class="logo"><a href="#">Kerhève</a></li>
+
+                            <li><a href="#">Recettes</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- header -->
+            </header><!-- header-container -->
+
+
+            <div class="contact container">
+                <h1>Contactez Nous !</h1>
+                <dl>
+                    <dt>À la ferme</dt>
+                    <dd>02 97 27 22 24</dd>
+                    <dt>Sur le Portable</dt>
+                    <dd>06 86 82 78 57</dd>
+                    <dt>Par e-mail</dt>
+                    <dd>lefralliec@gmail.com <div class="email-sub">Abonnez vous pour recevoir toutes le petites infos sur nos plats cuisinés en cliquant ici</div></dd>
+                </dl>
+            </div>
+            <div class="map-wrapper">
+                <div id="map"></div>
+            </div>
+            <div class="market container">
+                <h1>Venez nous voir !</h1>
+                <ul>
+                    <li>Vente à la ferme : tous les jours de 00h00 à 10h00 et de 5h00 à 3h30
+                    <div class="info">Il  est preférable de passer un coup de fil avant de passer</div></li>
+                    <li>
+                        Sur les Marchés
+                        <ul>
+                            <li>le Samedi Matin à Vannes</li>
+                            <li>le Vendredi matin à Port Navalo pendant les vacances scolaires</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <footer>
+                <div class="page-footer container">
+                    <div class="author">
+                        <p>&copy; Noé <strong>Maillard</strong></p>
+                    </div>
+                </div><!-- footer inner -->
+            </footer><!-- footer -->
+
+
+
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>
+                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                e.src='//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                ga('create','UA-XXXXX-X');ga('send','pageview');
+            </script>
+        </body>
+        </html>
